@@ -17,7 +17,7 @@ Using the Deep Graph Library (DGL), an open-source library to which AWS contribu
 
 #### Example Use Cases
 
-**- [Fraud Detection](credit-card-fraud-detection/):** in this use case, we use the [IEEE CIS Credit Transations](https://www.kaggle.com/c/ieee-fraud-detection/data) dataset to build a graph dataset, ingest it in a Neptune DB cluster, build a node classification task to predict if a transaction is fraud by leveraging the different relationships between entities. 
+**[1- Fraud Detection](credit-card-fraud-detection/):** in this use case, we use the [IEEE CIS Credit Transations](https://www.kaggle.com/c/ieee-fraud-detection/data) dataset to build a graph dataset, ingest it in a Neptune DB cluster, build a node classification task to predict if a transaction is fraud by leveraging the different relationships between entities. 
 
 
 ## Environment Setup
