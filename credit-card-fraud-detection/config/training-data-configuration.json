@@ -1,0 +1,889 @@
+{
+  "version" : "v2.0",
+  "query_engine" : "gremlin",
+  "graph" : {
+    "nodes" : [ {
+      "file_name" : "nodes/Card.consolidated.csv",
+      "separator" : ",",
+      "node" : [ "~id", "Card" ],
+      "features" : [ {
+        "feature" : [ "card1", "card1", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "card2", "card2", "category" ]
+      }, {
+        "feature" : [ "card3", "card3", "category" ]
+      }, {
+        "feature" : [ "card4", "card4", "category" ]
+      }, {
+        "feature" : [ "card5", "card5", "category" ]
+      }, {
+        "feature" : [ "card6", "card6", "category" ]
+      } ]
+    }, {
+      "file_name" : "nodes/Identifier.consolidated.csv",
+      "separator" : ",",
+      "node" : [ "~id", "Identifier" ],
+      "features" : [ {
+        "feature" : [ "id_01", "id_01", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "id_02", "id_02", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "id_05", "id_05", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "id_06", "id_06", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "id_11", "id_11", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "id_12", "id_12", "category" ]
+      }, {
+        "feature" : [ "id_15", "id_15", "category" ]
+      }, {
+        "feature" : [ "id_16", "id_16", "category" ]
+      }, {
+        "feature" : [ "id_17", "id_17", "category" ]
+      }, {
+        "feature" : [ "id_19", "id_19", "category" ]
+      }, {
+        "feature" : [ "id_20", "id_20", "category" ]
+      }, {
+        "feature" : [ "id_28", "id_28", "category" ]
+      }, {
+        "feature" : [ "id_29", "id_29", "category" ]
+      }, {
+        "feature" : [ "id_31", "id_31", "category" ]
+      }, {
+        "feature" : [ "id_35", "id_35", "category" ]
+      }, {
+        "feature" : [ "id_36", "id_36", "category" ]
+      }, {
+        "feature" : [ "id_37", "id_37", "category" ]
+      }, {
+        "feature" : [ "id_38", "id_38", "category" ]
+      }, {
+        "feature" : [ "id_13", "id_13", "category" ]
+      } ]
+    }, {
+      "file_name" : "nodes/Device.consolidated.csv",
+      "separator" : ",",
+      "node" : [ "~id", "Device" ],
+      "features" : [ {
+        "feature" : [ "DeviceType", "DeviceType", "category" ]
+      }, {
+        "feature" : [ "DeviceInfo", "DeviceInfo", "category" ]
+      } ]
+    }, {
+      "file_name" : "nodes/Transaction.consolidated.csv",
+      "separator" : ",",
+      "node" : [ "~id", "Transaction" ],
+      "features" : [ {
+        "feature" : [ "P_emaildomain", "P_emaildomain", "category" ]
+      }, {
+        "feature" : [ "C1", "C1", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C2", "C2", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C3", "C3", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C4", "C4", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C5", "C5", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C6", "C6", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C7", "C7", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C8", "C8", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C9", "C9", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C10", "C10", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C11", "C11", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C12", "C12", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C13", "C13", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "C14", "C14", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "D1", "D1", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V95", "V95", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V96", "V96", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V97", "V97", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V98", "V98", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V99", "V99", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V100", "V100", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V101", "V101", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V102", "V102", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V103", "V103", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V104", "V104", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V105", "V105", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V106", "V106", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V107", "V107", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V108", "V108", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V109", "V109", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V110", "V110", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V111", "V111", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V112", "V112", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V113", "V113", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V114", "V114", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V115", "V115", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V116", "V116", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V117", "V117", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V118", "V118", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V119", "V119", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V120", "V120", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V121", "V121", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V122", "V122", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V123", "V123", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V124", "V124", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V125", "V125", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V126", "V126", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V127", "V127", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V128", "V128", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V129", "V129", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V130", "V130", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V131", "V131", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V132", "V132", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V133", "V133", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V134", "V134", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V135", "V135", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V136", "V136", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V137", "V137", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V279", "V279", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V280", "V280", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V281", "V281", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V282", "V282", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V283", "V283", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V284", "V284", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V285", "V285", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V286", "V286", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V287", "V287", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V288", "V288", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V289", "V289", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V290", "V290", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V291", "V291", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V292", "V292", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V293", "V293", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V294", "V294", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V295", "V295", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V296", "V296", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V297", "V297", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V298", "V298", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V299", "V299", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V300", "V300", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V301", "V301", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V302", "V302", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V303", "V303", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V304", "V304", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V305", "V305", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V306", "V306", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V307", "V307", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V308", "V308", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V309", "V309", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V310", "V310", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V311", "V311", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V312", "V312", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V313", "V313", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V314", "V314", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V315", "V315", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V316", "V316", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V317", "V317", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V318", "V318", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V319", "V319", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V320", "V320", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V321", "V321", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "ProductCD", "ProductCD", "category" ]
+      }, {
+        "feature" : [ "addr1", "addr1", "category" ]
+      }, {
+        "feature" : [ "addr2", "addr2", "category" ]
+      }, {
+        "feature" : [ "TransactionDT", "TransactionDT", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "TransactionAmt", "TransactionAmt", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "D10", "D10", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "D15", "D15", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V12", "V12", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V13", "V13", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V14", "V14", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V15", "V15", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V16", "V16", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V17", "V17", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V18", "V18", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V19", "V19", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V20", "V20", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V21", "V21", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V22", "V22", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V23", "V23", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V24", "V24", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V25", "V25", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V26", "V26", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V27", "V27", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V28", "V28", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V29", "V29", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V30", "V30", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V31", "V31", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V32", "V32", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V33", "V33", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V34", "V34", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V53", "V53", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V54", "V54", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V55", "V55", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V56", "V56", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V57", "V57", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V58", "V58", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V59", "V59", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V60", "V60", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V61", "V61", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V62", "V62", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V63", "V63", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V64", "V64", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V65", "V65", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V66", "V66", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V67", "V67", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V68", "V68", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V69", "V69", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V70", "V70", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V71", "V71", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V72", "V72", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V73", "V73", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V74", "V74", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V75", "V75", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V76", "V76", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V77", "V77", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V78", "V78", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V79", "V79", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V80", "V80", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V81", "V81", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V82", "V82", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V83", "V83", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V84", "V84", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V85", "V85", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V86", "V86", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V87", "V87", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V88", "V88", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V89", "V89", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V90", "V90", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V91", "V91", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V92", "V92", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V93", "V93", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V94", "V94", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "M6", "M6", "category" ]
+      }, {
+        "feature" : [ "D4", "D4", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V35", "V35", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V36", "V36", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V37", "V37", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V38", "V38", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V39", "V39", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V40", "V40", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V41", "V41", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V42", "V42", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V43", "V43", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V44", "V44", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V45", "V45", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V46", "V46", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V47", "V47", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V48", "V48", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V49", "V49", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V50", "V50", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V51", "V51", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      }, {
+        "feature" : [ "V52", "V52", "numerical" ],
+        "norm" : "min-max",
+        "imputer" : "median"
+      } ],
+      "labels" : [ {
+        "label" : [ "isFraud", "classification" ],
+        "split_rate" : [ 0.8, 0.1, 0.1 ]
+      } ]
+    } ],
+    "edges" : [ {
+      "file_name" : "edges/%28Transaction%29-purchased_by-%28Card%29.consolidated.csv",
+      "separator" : ",",
+      "source" : [ "~from", "Transaction" ],
+      "relation" : [ "", "purchased_by" ],
+      "dest" : [ "~to", "Card" ]
+    }, {
+      "file_name" : "edges/%28Transaction%29-transacted_through-%28Email%29.consolidated.csv",
+      "separator" : ",",
+      "source" : [ "~from", "Transaction" ],
+      "relation" : [ "", "transacted_through" ],
+      "dest" : [ "~to", "Email" ]
+    }, {
+      "file_name" : "edges/%28Transaction%29-associated_with-%28Device%29.consolidated.csv",
+      "separator" : ",",
+      "source" : [ "~from", "Transaction" ],
+      "relation" : [ "", "associated_with" ],
+      "dest" : [ "~to", "Device" ]
+    }, {
+      "file_name" : "edges/%28Transaction%29-identified_by-%28Identifier%29.consolidated.csv",
+      "separator" : ",",
+      "source" : [ "~from", "Transaction" ],
+      "relation" : [ "", "identified_by" ],
+      "dest" : [ "~to", "Identifier" ]
+    } ]
+  },
+  "warnings" : [ ]
+}
