@@ -15,7 +15,9 @@ Making accurate predictions on graphs with billions of relationships can be diff
 
 Using the Deep Graph Library (DGL), an open-source library to which AWS contributes, that makes it easy to apply deep learning to graph data, Neptune ML automates the heavy lifting of selecting and training the best ML model for graph data, and lets users run machine learning on their graph directly using Neptune APIs and queries. As a result, you can now create, train, and apply ML on Amazon Neptune data in hours instead of weeks without the need to learn new tools and ML technologies.
 
-**- Fraud Detection:** in this use case, we use the [IEEE CIS Credit Transations] (https://www.kaggle.com/c/ieee-fraud-detection/data) dataset to build a graph dataset, ingest it in a Neptune DB cluster, build a node classification task to predict if a transaction is fraud by leveraging the different relationships between entities. 
+#### Example Use Cases
+
+**- [Fraud Detection](credit-card-fraud-detection/):** in this use case, we use the [IEEE CIS Credit Transations](https://www.kaggle.com/c/ieee-fraud-detection/data) dataset to build a graph dataset, ingest it in a Neptune DB cluster, build a node classification task to predict if a transaction is fraud by leveraging the different relationships between entities. 
 
 
 ## Environment Setup
